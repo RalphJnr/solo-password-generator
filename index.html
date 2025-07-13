@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero-section">
+      <h1 class="heading">
+        <span class="white"> Generate a </span>
+        <span class="green"> random password</span>
+      </h1>
+
+      <p class="motto">Never use an insecure password again.</p>
+      <div class="p-length-wrapper">
+        <p class="pass-length">Password Length:</p>
+        <input
+          type="number"
+          class="input-length"
+          oninput="inputText(event)"
+          placeholder="e.g 15"
+        />
+      </div>
+
+      <button class="btn" onclick="generatePass()">Generate passwords</button>
+      <hr />
+
+      <div class="pass-section">
+        <div class="pass1" onclick="copy(event)"></div>
+        <div class="pass2" onclick="copy(event)"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
